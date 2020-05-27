@@ -1,0 +1,10 @@
+<%= form_tag posts_path do %>
+	  <label>Student First Name:</label><br>
+	    <%= text_field_tag :'post[first_name]' %><br>
+ 
+	  <label>Student Last Name:</label><br>
+	    <%= text_area_tag :'post[last_name]' %><br>
+	 
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+	  <input type="submit" value="Submit Post">
+		<% end %>
